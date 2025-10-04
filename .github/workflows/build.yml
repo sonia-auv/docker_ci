@@ -1,0 +1,22 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches: ["develop"]
+
+jobs:
+  build-develop-sonia_common_ros2:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-docker-action@v4
+      - name: Build
+        run: ./scripts/ci/build_develop_sonia_common_ros2.sh
+  build-develop-sonia_bt_runner:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-docker-action@v4
+      - name: Build
+        run: ./scripts/ci/build_develop_sonia_bt_runner.sh
