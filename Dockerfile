@@ -7,4 +7,4 @@ WORKDIR /build
 
 COPY . .
 
-RUN BUILD_FOR="${BUILD_FOR}" BRANCH_NAME="${BRANCH_NAME}" ./scripts/build.sh
+RUN ./scripts/entry.sh "${BUILD_FOR}" "${BRANCH_NAME}"
