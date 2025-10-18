@@ -3,4 +3,5 @@
 set -e
 set -o pipefail
 
-docker build --build-arg BUILD_FOR=sonia_common_ros2 .
+# TODO: Let the branch name empty.
+docker build --build-arg BUILD_FOR=sonia_common_ros2 --build-arg BRANCH_NAME=add-ci-cd .
