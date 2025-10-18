@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Usage: ./scripts/build.sh [REPO] [BRANCH_NAME]
+
 set -e
 set -o pipefail
 
