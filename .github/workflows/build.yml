@@ -20,3 +20,10 @@ jobs:
       - uses: docker/setup-docker-action@v4
       - name: Build
         run: ./scripts/ci/build_develop_sonia_bt_runner.sh
+  build-develop-depth_port_manager:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-docker-action@v4
+      - name: Build
+        run: ./scripts/ci/build_develop_depth_port_manager.sh
