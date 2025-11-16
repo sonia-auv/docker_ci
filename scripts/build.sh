@@ -5,6 +5,9 @@
 set -e
 set -o pipefail
 
+sudo apt update
+sudo apt install libtinyxml2-dev
+
 REPO=$1
 BRANCH_NAME=$2
 PWD=$(pwd)
