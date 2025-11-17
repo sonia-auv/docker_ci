@@ -25,6 +25,7 @@ Here is some documentation on the arguments expected at build-time:
     - sonia_bt_runner: Build sonia_bt_runner
     - sonia_common_ros2: Build sonia_common_ros2
     - depth_port_manager: Build depth_port_manager
+    - rs485_port_manager: Build rs485_port_manager
 
   Default: none
 
