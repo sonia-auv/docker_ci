@@ -27,10 +27,10 @@ jobs:
       - uses: docker/setup-docker-action@v4
       - name: Build
         run: ./scripts/ci/build_develop_depth_port_manager.sh
-  build-develop-proc-vision-ros2:
+  build-develop-imu_port_manager:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-docker-action@v4
       - name: Build
-        run: ./scripts/ci/build_develop_proc_vision_ros2.sh
+        run: ./scripts/ci/build_develop_imu_port_manager.sh
