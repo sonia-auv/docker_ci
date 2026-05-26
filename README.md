@@ -26,6 +26,7 @@ Here is some documentation on the arguments expected at build-time:
     - sonia_common_ros2: Build sonia_common_ros2
     - depth_port_manager: Build depth_port_manager
     - imu_port_manager: Build imu_port_manager
+    - sonia_monitor: Build sonia_monitor
 
   Default: none
 
