@@ -27,6 +27,7 @@ Here is some documentation on the arguments expected at build-time:
     - depth_port_manager: Build depth_port_manager
     - imu_port_manager: Build imu_port_manager
     - sonia_monitor: Build sonia_monitor
+    - sonia_blackbox: Build sonia_blackbox
 
   Default: none
 
