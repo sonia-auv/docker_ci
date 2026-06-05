@@ -41,3 +41,10 @@ jobs:
       - uses: docker/setup-docker-action@v4
       - name: Build
         run: ./scripts/ci/build_develop_sonia_monitor.sh
+  build-develop-sonia_blackbox:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-docker-action@v4
+      - name: Build
+        run: ./scripts/ci/build_develop_sonia_blackbox.sh
